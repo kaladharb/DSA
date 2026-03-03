@@ -23,9 +23,6 @@
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
-my approach:
-used prefix and sufix product to handle negative numbers.
-Traversed from both diections in one loop
 
 Time complexity: O(n)
 Space complexity:O(n)
@@ -35,3 +32,7 @@ Space complexity:O(n)
 	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
 	<li>The product of any subarray of <code>nums</code> is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</li>
 </ul>
+my approach:
+used prefix and sufix product to handle negative numbers.
+Traversed from both diections in one loop
+</b>
