@@ -23,6 +23,12 @@
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
+my approach:
+used prefix and sufix product to handle negative numbers.
+Traversed from both diections in one loop
+
+Time complexity: O(n)
+Space complexity:O(n)
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>4</sup></code></li>
