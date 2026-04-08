@@ -1,13 +1,20 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        majority=0
-        final_ele=0
-        for i in nums:
-            if majority==0:
-                final_ele=i
-                majority=1
-            elif final_ele==i:
-                majority+=1
+        ele=0
+        cnt=0
+        for i in range(len(nums)):
+            if cnt==0:
+                ele=nums[i]
+                cnt=1
+            elif ele==nums[i]:
+                cnt+=1
             else:
-                majority-=1
-        return final_ele     
+                cnt-=1
+        cnt1=0
+        for i in nums:
+            if i==ele:
+                cnt1+=1
+        if cnt1>len(nums)//2:
+            return ele
+        else:
+            return -1
