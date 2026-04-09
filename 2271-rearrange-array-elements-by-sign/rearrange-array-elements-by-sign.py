@@ -8,7 +8,15 @@ class Solution:
             else:
                 neg.append(i)
         arr=[0]*len(nums)
-        for i in range(len(nums)//2):
-            arr[2*i]=pos[i]
-            arr[2*i+1]=neg[i]
+        p=0
+        n=0
+        for i in range(len(nums)):
+            # arr[2*i]=pos[i]
+            # arr[2*i+1]=neg[i]
+            if i%2==0:
+                arr[i]=pos[p]
+                p+=1
+            else:
+                arr[i]=neg[n]
+                n+=1
         return arr
