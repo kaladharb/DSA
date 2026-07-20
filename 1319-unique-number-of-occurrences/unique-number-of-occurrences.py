@@ -4,13 +4,15 @@ class Solution:
         freq={}
         for i in arr:
             freq[i]=freq.get(i,0)+1
-        
+
+        s=set()
         found=True
         for i in freq:
-            for j in freq:
-                if freq[i]==freq[j] and i!=j:
-                    found=False
-                    break
+            if freq[i] in s:
+                found=False
+                break
+            else:
+                s.add(freq[i])
 
         if found:
             return True
