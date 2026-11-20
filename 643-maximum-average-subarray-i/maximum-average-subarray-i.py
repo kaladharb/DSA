@@ -6,12 +6,12 @@ class Solution:
         r=0
         sumi=0
         while r<n:
-            sumi+=nums[r]
-            while(r-l+1>k):
+            
+            if (r-l+1>k):
                 sumi-=nums[l]
                 l+=1
             
-            
+            sumi+=nums[r]
             if r-l+1==k:
                 avg=sumi/k
                 maxi=max(round(avg,5),maxi)
